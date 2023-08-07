@@ -63,22 +63,22 @@ export async function PokemonCard({ id }: Props) {
     await PokemonDescription.json();
 
   const pokemonAbout = {
-    height: pokemonData.height,
-    weight: pokemonData.weight,
-    ability_normal: pokemonData.abilities[0].ability.name,
-    ability_hidden: pokemonData.abilities[1]?.ability.name,
-    type: pokemonData.types[0].type.name
+    height: pokemonData?.height,
+    weight: pokemonData?.weight,
+    ability_normal: pokemonData?.abilities[0].ability.name,
+    ability_hidden: pokemonData?.abilities[1]?.ability.name,
+    type: pokemonData?.types[0].type.name
   };
 
   const imgAndTypes = {
-    front_default: pokemonData.sprites.other.dream_world.front_default,
-    name: pokemonData.name,
-    types: pokemonData.types
+    front_default: pokemonData?.sprites.other.dream_world.front_default,
+    name: pokemonData?.name,
+    types: pokemonData?.types
   };
 
   const infoStatsData = {
-    type: pokemonData.types[0].type.name,
-    stats: pokemonData.stats
+    type: pokemonData?.types[0].type.name,
+    stats: pokemonData?.stats
   };
 
   return (
