@@ -101,7 +101,7 @@ export async function PokemonCard({ id }: Props) {
             <About pokemonAbout={pokemonAbout} />
 
             <p className="h-[60px] text-200 text-blackdarck text-center mx-auto w-[300px]">
-              {pokemonDescription[0].description}
+              {pokemonDescription[0]?.description}
             </p>
 
             <InfoStats infoStatsData={infoStatsData} />
